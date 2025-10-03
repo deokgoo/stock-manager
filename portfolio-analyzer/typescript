@@ -1,0 +1,834 @@
+Script started on Fri Oct  3 10:19:34 2025
+[0m[49m[39m[27m[24m[K
+[1A7[0m[49m[39m[0m[48;5;234m[38;5;31m [1m[38;5;31m[48;5;234m[38;5;39m~[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m/Documents/github/trade-d/[1m[38;5;31m[48;5;234m[38;5;39mportfolio-analyzer[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m[0m[38;5;31m[48;5;234m[48;5;234m[38;5;31m [0m[38;5;31m[48;5;234m[49m[38;5;234m[0m[38;5;234m[49m[39m [0m[49m[39m                                                                   [0m[48;5;234m[38;5;70m [0m[38;5;70m[48;5;234m[48;5;234m[38;5;70mok[0m[38;5;70m[48;5;234m[48;5;234m[38;5;70m [0m[38;5;70m[48;5;234m[49m[39m[0m[49m[39m[27m[24m[48C[?2004hscript[?25l8[0m[49m[39m[27m[24m[J]2;deokgoo@김덕구 님의 MacBookPro-F563W06NK4:~/Documents/github/trade-d/portfolio-analyzer]1;..olio-analyzer]697;OSCUnlock=031f233f1b5f432bbef5a78f13fc5cca]697;Dir=/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer]697;Shell=zsh]697;ShellPath=/bin/zsh]697;PID=74037]697;ExitCode=0]697;TTY=/dev/ttys008]697;Log=]697;ZshAutosuggestionColor=fg=8]697;FigAutosuggestionColor=]697;User=deokgoo[0m[38;5;31m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J]697;StartPrompt[0m[49m[39m[0m[48;5;234m[38;5;31m [1m[38;5;31m[48;5;234m[38;5;39m~[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m/Documents/github/trade-d/[1m[38;5;31m[48;5;234m[38;5;39mportfolio-analyzer[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m[0m[38;5;31m[48;5;234m[48;5;234m[38;5;31m [0m[38;5;31m[48;5;234m[48;5;234m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;178m [38;5;76mmain [38;5;178m!4 [38;5;39m?4[0m[38;5;39m[48;5;234m[48;5;234m[38;5;178m [0m[38;5;178m[48;5;234m[49m[38;5;234m[0m[38;5;234m[49m[39m [0m[49m[39m]697;EndPrompt]697;NewCmd=031f233f1b5f432bbef5a78f13fc5cca[K[44C]697;StartPrompt[0m[48;5;234m[38;5;70m [0m[38;5;70m[48;5;234m[48;5;234m[38;5;70mok[0m[38;5;70m[48;5;234m[48;5;234m[38;5;70m [0m[38;5;70m[48;5;234m[48;5;234m[38;5;70m[0m[38;5;70m[48;5;234m[48;5;234m[38;5;37m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;37m base[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m py[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m [0m[38;5;37m[48;5;234m[49m[39m]697;EndPrompt[58D[?1h=[?12l[?25h[?2004hsscripts[?1l>[?2004l
+]697;OSCLock=031f233f1b5f432bbef5a78f13fc5cca]697;PreExec]2;cat package.json | jq '.scripts']1;scripts[1;39m{
+  [0m[1;34m"start"[0m[1;39m: [0m[0;32m"react-scripts start"[0m[1;39m,
+  [0m[1;34m"build"[0m[1;39m: [0m[0;32m"react-scripts build"[0m[1;39m,
+  [0m[1;34m"test"[0m[1;39m: [0m[0;32m"react-scripts test"[0m[1;39m,
+  [0m[1;34m"eject"[0m[1;39m: [0m[0;32m"react-scripts eject"[0m[1;39m
+[1;39m}[0m
+[1m[7m%[27m[1m[0m                                                                                                                        ]2;deokgoo@김덕구 님의 MacBookPro-F563W06NK4:~/Documents/github/trade-d/portfolio-analyzer]1;..olio-analyzer]697;OSCUnlock=031f233f1b5f432bbef5a78f13fc5cca]697;Dir=/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer]697;Shell=zsh]697;ShellPath=/bin/zsh]697;PID=74037]697;ExitCode=0]697;TTY=/dev/ttys008]697;Log=]697;ZshAutosuggestionColor=fg=8]697;FigAutosuggestionColor=]697;User=deokgoo[0m[27m[24m[J]697;StartPrompt[0m[49m[39m[0m[48;5;234m[38;5;31m [1m[38;5;31m[48;5;234m[38;5;39m~[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mDoc[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mgith[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mt[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[1m[38;5;31m[48;5;234m[38;5;39mportfolio-analyzer[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m[0m[38;5;31m[48;5;234m[48;5;234m[38;5;31m [0m[38;5;31m[48;5;234m[48;5;234m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;178m [38;5;76mmain [38;5;178m!4 [38;5;39m?4[0m[38;5;39m[48;5;234m[48;5;234m[38;5;178m [0m[38;5;178m[48;5;234m[49m[38;5;234m[0m[38;5;234m[49m[39m [0m[49m[39m]697;EndPrompt]697;NewCmd=031f233f1b5f432bbef5a78f13fc5cca[K[58C]697;StartPrompt[0m[48;5;234m[38;5;70m [0m[38;5;70m[48;5;234m[48;5;234m[38;5;70mok[0m[38;5;70m[48;5;234m[48;5;234m[38;5;70m [0m[38;5;70m[48;5;234m[48;5;234m[38;5;70m[0m[38;5;70m[48;5;234m[48;5;234m[38;5;37m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;37m base[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m py[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m [0m[38;5;37m[48;5;234m[49m[39m]697;EndPrompt[72D[?1h=[?2004hpp[90mnpm dev[39mp[39mn[39mp[39mm[39m [39ms[39m [39m [90merve-prd[39m[8D [39m [39m [39m [39m [39m [39m [39m [39m [9D[90mdev[39m[39m [39m [39m [90m dev[39m [39m [39m [39m [39m [90mm dev[39m [39m [39m [39m [39m [39m [90mpm dev[39mp [39m [39m [39m [39m [39m [39m p[90mnpm dev[39m [39m [39m [39m [39m [39m [39m [39m [8Dnn[90mpx tsc --noEmit[39m[15Dn[39mp[39mm[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[90m run build[39m[10D[39m [39ms[39m [39m [39m [39m [39m [39m [39m [39m [8D[90mhow eslint engines[39m[18D[39mt[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[90mart[39m[39ma[39mr[39mt[?1l>[?2004l
+]697;OSCLock=031f233f1b5f432bbef5a78f13fc5cca]697;PreExec]2;npm start]1;npm
+> portfolio-analyzer@0.1.0 start
+> react-scripts start
+
+[1G[0K(node:74558) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:74558) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+[2J[3J[H[36mStarting the development server...[39m
+[36m[39m
+[2J[3J[H[31mFailed to compile.[39m
+[31m[39m
+Attempted import error: './App' does not contain a default export (imported as 'App').
+[1m[31mERROR[39m[22m in [1m./src/index.js[39m[22m [1m[32m12:33-36[39m[22m
+[1mexport 'default' (imported as 'App') was [1m[31mnot found[39m[22m[1m in './App' [1m[31m(module has no exports)[39m[22m[1m[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/App.css[39m[22m (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/App.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/tailwindcss/dist/lib.js:37:1635)
+    at LazyResult.runOnRoot (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:361:16)
+    at LazyResult.runAsync (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:290:26)
+    at LazyResult.async (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:192:30)
+    at LazyResult.then (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:436:17)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/index.css[39m[22m (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/tailwindcss/dist/lib.js:37:1635)
+    at LazyResult.runOnRoot (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:361:16)
+    at LazyResult.runAsync (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:290:26)
+    at LazyResult.async (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:192:30)
+    at LazyResult.then (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:436:17)[39m[22m
+
+webpack compiled with [1m[31m3 errors[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[31mFailed to compile.[39m
+[31m[39m
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+[1m[31mERROR[39m[22m in [1m./src/App.css[39m[22m (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/App.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/tailwindcss/dist/lib.js:37:1635)
+    at LazyResult.runOnRoot (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:361:16)
+    at LazyResult.runAsync (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:290:26)
+    at LazyResult.async (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:192:30)
+    at LazyResult.then (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:436:17)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runNextTicks (node:internal/process/task_queues:64:3)
+    at process.processImmediate (node:internal/timers:454:9)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/index.css[39m[22m (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/tailwindcss/dist/lib.js:37:1635)
+    at LazyResult.runOnRoot (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:361:16)
+    at LazyResult.runAsync (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:290:26)
+    at LazyResult.async (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:192:30)
+    at LazyResult.then (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:436:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[31mFailed to compile.[39m
+[31m[39m
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+[1m[31mERROR[39m[22m in [1m./src/App.css[39m[22m (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/App.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/tailwindcss/dist/lib.js:37:1635)
+    at LazyResult.runOnRoot (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:361:16)
+    at LazyResult.runAsync (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:290:26)
+    at LazyResult.async (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:192:30)
+    at LazyResult.then (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:436:17)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/index.css[39m[22m (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/tailwindcss/dist/lib.js:37:1635)
+    at LazyResult.runOnRoot (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:361:16)
+    at LazyResult.runAsync (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:290:26)
+    at LazyResult.async (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:192:30)
+    at LazyResult.then (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:436:17)[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[31mFailed to compile.[39m
+[31m[39m
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+[1m[31mERROR[39m[22m in [1m./src/App.css[39m[22m (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/App.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/tailwindcss/dist/lib.js:37:1635)
+    at LazyResult.runOnRoot (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:361:16)
+    at LazyResult.runAsync (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:290:26)
+    at LazyResult.async (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:192:30)
+    at LazyResult.then (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:436:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/index.css[39m[22m (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/tailwindcss/dist/lib.js:37:1635)
+    at LazyResult.runOnRoot (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:361:16)
+    at LazyResult.runAsync (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:290:26)
+    at LazyResult.async (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:192:30)
+    at LazyResult.then (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:436:17)[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                        ]2;deokgoo@김덕구 님의 MacBookPro-F563W06NK4:~/Documents/github/trade-d/portfolio-analyzer]1;..olio-analyzer]697;OSCUnlock=031f233f1b5f432bbef5a78f13fc5cca]697;Dir=/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer]697;Shell=zsh]697;ShellPath=/bin/zsh]697;PID=74037]697;ExitCode=130]697;TTY=/dev/ttys008]697;Log=]697;ZshAutosuggestionColor=fg=8]697;FigAutosuggestionColor=]697;User=deokgoo[0m[27m[24m[J]697;StartPrompt[0m[49m[39m[0m[48;5;234m[38;5;31m [1m[38;5;31m[48;5;234m[38;5;39m~[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mDoc[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mgith[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mt[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[1m[38;5;31m[48;5;234m[38;5;39mportfolio-analyzer[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m[0m[38;5;31m[48;5;234m[48;5;234m[38;5;31m [0m[38;5;31m[48;5;234m[48;5;234m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;178m [38;5;76mmain [38;5;178m!3 [38;5;39m?5[0m[38;5;39m[48;5;234m[48;5;234m[38;5;178m [0m[38;5;178m[48;5;234m[49m[38;5;234m[0m[38;5;234m[49m[39m [0m[49m[39m]697;EndPrompt]697;NewCmd=031f233f1b5f432bbef5a78f13fc5cca[K[48C]697;StartPrompt[0m[48;5;234m[38;5;160m INT[0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m[0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m [0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m[0m[38;5;160m[48;5;234m[48;5;234m[38;5;248m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;248m 1m 55s[0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m[0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m [0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m[0m[38;5;248m[48;5;234m[48;5;234m[38;5;37m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;37m base[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m py[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m [0m[38;5;37m[48;5;234m[49m[39m]697;EndPrompt[72D[?1h=[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                        ]2;deokgoo@김덕구 님의 MacBookPro-F563W06NK4:~/Documents/github/trade-d/portfolio-analyzer]1;..olio-analyzer]697;OSCUnlock=031f233f1b5f432bbef5a78f13fc5cca]697;Dir=/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer]697;Shell=zsh]697;ShellPath=/bin/zsh]697;PID=74037]697;ExitCode=130]697;TTY=/dev/ttys008]697;Log=]697;ZshAutosuggestionColor=fg=8]697;FigAutosuggestionColor=]697;User=deokgoo]697;OSCLock=031f233f1b5f432bbef5a78f13fc5cca]697;PreExec[0m[27m[24m[J]697;StartPrompt[0m[49m[39m[0m[48;5;234m[38;5;31m [1m[38;5;31m[48;5;234m[38;5;39m~[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mDoc[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mgith[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mt[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[1m[38;5;31m[48;5;234m[38;5;39mportfolio-analyzer[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m[0m[38;5;31m[48;5;234m[48;5;234m[38;5;31m [0m[38;5;31m[48;5;234m[48;5;234m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;178m [38;5;76mmain [38;5;178m!3 [38;5;39m?5[0m[38;5;39m[48;5;234m[48;5;234m[38;5;178m [0m[38;5;178m[48;5;234m[49m[38;5;234m[0m[38;5;234m[49m[39m [0m[49m[39m]697;EndPrompt]697;NewCmd=031f233f1b5f432bbef5a78f13fc5cca[K[48C]697;StartPrompt[0m[48;5;234m[38;5;160m INT[0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m[0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m [0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m[0m[38;5;160m[48;5;234m[48;5;234m[38;5;248m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;248m 1m 55s[0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m[0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m [0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m[0m[38;5;248m[48;5;234m[48;5;234m[38;5;37m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;37m base[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m py[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m [0m[38;5;37m[48;5;234m[49m[39m]697;EndPrompt[72D[?1h=[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                        ]2;deokgoo@김덕구 님의 MacBookPro-F563W06NK4:~/Documents/github/trade-d/portfolio-analyzer]1;..olio-analyzer]697;OSCUnlock=031f233f1b5f432bbef5a78f13fc5cca]697;Dir=/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer]697;Shell=zsh]697;ShellPath=/bin/zsh]697;PID=74037]697;ExitCode=130]697;TTY=/dev/ttys008]697;Log=]697;ZshAutosuggestionColor=fg=8]697;FigAutosuggestionColor=]697;User=deokgoo]697;OSCLock=031f233f1b5f432bbef5a78f13fc5cca]697;PreExec[0m[27m[24m[J]697;StartPrompt[0m[49m[39m[0m[48;5;234m[38;5;31m [1m[38;5;31m[48;5;234m[38;5;39m~[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mDoc[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mgith[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mt[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[1m[38;5;31m[48;5;234m[38;5;39mportfolio-analyzer[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m[0m[38;5;31m[48;5;234m[48;5;234m[38;5;31m [0m[38;5;31m[48;5;234m[48;5;234m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;178m [38;5;76mmain [38;5;178m!3 [38;5;39m?5[0m[38;5;39m[48;5;234m[48;5;234m[38;5;178m [0m[38;5;178m[48;5;234m[49m[38;5;234m[0m[38;5;234m[49m[39m [0m[49m[39m]697;EndPrompt]697;NewCmd=031f233f1b5f432bbef5a78f13fc5cca[K[48C]697;StartPrompt[0m[48;5;234m[38;5;160m INT[0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m[0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m [0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m[0m[38;5;160m[48;5;234m[48;5;234m[38;5;248m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;248m 1m 55s[0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m[0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m [0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m[0m[38;5;248m[48;5;234m[48;5;234m[38;5;37m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;37m base[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m py[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m [0m[38;5;37m[48;5;234m[49m[39m]697;EndPrompt[72D[?1h=[?2004hnpm start[?1l>[?2004l
+]697;OSCLock=031f233f1b5f432bbef5a78f13fc5cca]697;PreExec]2;npm start]1;npm
+> portfolio-analyzer@0.1.0 start
+> react-scripts start
+
+[1G[0K(node:75862) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:75862) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+[2J[3J[H[36mStarting the development server...[39m
+[36m[39m
+[2J[3J[H[31mFailed to compile.[39m
+[31m[39m
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+[1m[31mERROR[39m[22m in [1m./src/App.css[39m[22m (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/App.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/tailwindcss/dist/lib.js:37:1635)
+    at LazyResult.runOnRoot (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:361:16)
+    at LazyResult.runAsync (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:290:26)
+    at LazyResult.async (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:192:30)
+    at LazyResult.then (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:436:17)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/index.css[39m[22m (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/tailwindcss/dist/lib.js:37:1635)
+    at LazyResult.runOnRoot (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:361:16)
+    at LazyResult.runAsync (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:290:26)
+    at LazyResult.async (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:192:30)
+    at LazyResult.then (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:436:17)[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[31mFailed to compile.[39m
+[31m[39m
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+[1m[31mERROR[39m[22m in [1m./src/App.css[39m[22m (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/App.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/tailwindcss/dist/lib.js:37:1635)
+    at LazyResult.runOnRoot (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:361:16)
+    at LazyResult.runAsync (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:290:26)
+    at LazyResult.async (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:192:30)
+    at LazyResult.then (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:436:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/index.css[39m[22m (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/tailwindcss/dist/lib.js:37:1635)
+    at LazyResult.runOnRoot (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:361:16)
+    at LazyResult.runAsync (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:290:26)
+    at LazyResult.async (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:192:30)
+    at LazyResult.then (/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer/node_modules/postcss/lib/lazy-result.js:436:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                        ]2;deokgoo@김덕구 님의 MacBookPro-F563W06NK4:~/Documents/github/trade-d/portfolio-analyzer]1;..olio-analyzer]697;OSCUnlock=031f233f1b5f432bbef5a78f13fc5cca]697;Dir=/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer]697;Shell=zsh]697;ShellPath=/bin/zsh]697;PID=74037]697;ExitCode=130]697;TTY=/dev/ttys008]697;Log=]697;ZshAutosuggestionColor=fg=8]697;FigAutosuggestionColor=]697;User=deokgoo[0m[27m[24m[J]697;StartPrompt[0m[49m[39m[0m[48;5;234m[38;5;31m [1m[38;5;31m[48;5;234m[38;5;39m~[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mDoc[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mgith[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mt[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[1m[38;5;31m[48;5;234m[38;5;39mportfolio-analyzer[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m[0m[38;5;31m[48;5;234m[48;5;234m[38;5;31m [0m[38;5;31m[48;5;234m[48;5;234m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;178m [38;5;76mmain [38;5;178m!3 [38;5;39m?3[0m[38;5;39m[48;5;234m[48;5;234m[38;5;178m [0m[38;5;178m[48;5;234m[49m[38;5;234m[0m[38;5;234m[49m[39m [0m[49m[39m]697;EndPrompt]697;NewCmd=031f233f1b5f432bbef5a78f13fc5cca[K[51C]697;StartPrompt[0m[48;5;234m[38;5;160m INT[0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m[0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m [0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m[0m[38;5;160m[48;5;234m[48;5;234m[38;5;248m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;248m 26s[0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m[0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m [0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m[0m[38;5;248m[48;5;234m[48;5;234m[38;5;37m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;37m base[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m py[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m [0m[38;5;37m[48;5;234m[49m[39m]697;EndPrompt[72D[?1h=[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                        ]2;deokgoo@김덕구 님의 MacBookPro-F563W06NK4:~/Documents/github/trade-d/portfolio-analyzer]1;..olio-analyzer]697;OSCUnlock=031f233f1b5f432bbef5a78f13fc5cca]697;Dir=/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer]697;Shell=zsh]697;ShellPath=/bin/zsh]697;PID=74037]697;ExitCode=130]697;TTY=/dev/ttys008]697;Log=]697;ZshAutosuggestionColor=fg=8]697;FigAutosuggestionColor=]697;User=deokgoo]697;OSCLock=031f233f1b5f432bbef5a78f13fc5cca]697;PreExec[0m[27m[24m[J]697;StartPrompt[0m[49m[39m[0m[48;5;234m[38;5;31m [1m[38;5;31m[48;5;234m[38;5;39m~[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mDoc[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mgith[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mt[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[1m[38;5;31m[48;5;234m[38;5;39mportfolio-analyzer[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m[0m[38;5;31m[48;5;234m[48;5;234m[38;5;31m [0m[38;5;31m[48;5;234m[48;5;234m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;178m [38;5;76mmain [38;5;178m!3 [38;5;39m?3[0m[38;5;39m[48;5;234m[48;5;234m[38;5;178m [0m[38;5;178m[48;5;234m[49m[38;5;234m[0m[38;5;234m[49m[39m [0m[49m[39m]697;EndPrompt]697;NewCmd=031f233f1b5f432bbef5a78f13fc5cca[K[51C]697;StartPrompt[0m[48;5;234m[38;5;160m INT[0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m[0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m [0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m[0m[38;5;160m[48;5;234m[48;5;234m[38;5;248m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;248m 26s[0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m[0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m [0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m[0m[38;5;248m[48;5;234m[48;5;234m[38;5;37m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;37m base[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m py[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m [0m[38;5;37m[48;5;234m[49m[39m]697;EndPrompt[72D[?1h=[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                        ]2;deokgoo@김덕구 님의 MacBookPro-F563W06NK4:~/Documents/github/trade-d/portfolio-analyzer]1;..olio-analyzer]697;OSCUnlock=031f233f1b5f432bbef5a78f13fc5cca]697;Dir=/Users/deokgoo/Documents/github/trade-d/portfolio-analyzer]697;Shell=zsh]697;ShellPath=/bin/zsh]697;PID=74037]697;ExitCode=130]697;TTY=/dev/ttys008]697;Log=]697;ZshAutosuggestionColor=fg=8]697;FigAutosuggestionColor=]697;User=deokgoo]697;OSCLock=031f233f1b5f432bbef5a78f13fc5cca]697;PreExec[0m[27m[24m[J]697;StartPrompt[0m[49m[39m[0m[48;5;234m[38;5;31m [1m[38;5;31m[48;5;234m[38;5;39m~[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mDoc[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mgith[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[38;5;103mt[0m[38;5;103m[48;5;234m[48;5;234m[38;5;31m/[1m[38;5;31m[48;5;234m[38;5;39mportfolio-analyzer[0m[38;5;39m[48;5;234m[48;5;234m[38;5;31m[0m[38;5;31m[48;5;234m[48;5;234m[38;5;31m [0m[38;5;31m[48;5;234m[48;5;234m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;178m [38;5;76mmain [38;5;178m!3 [38;5;39m?3[0m[38;5;39m[48;5;234m[48;5;234m[38;5;178m [0m[38;5;178m[48;5;234m[49m[38;5;234m[0m[38;5;234m[49m[39m [0m[49m[39m]697;EndPrompt]697;NewCmd=031f233f1b5f432bbef5a78f13fc5cca[K[51C]697;StartPrompt[0m[48;5;234m[38;5;160m INT[0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m[0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m [0m[38;5;160m[48;5;234m[48;5;234m[38;5;160m[0m[38;5;160m[48;5;234m[48;5;234m[38;5;248m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;248m 26s[0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m[0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m [0m[38;5;248m[48;5;234m[48;5;234m[38;5;248m[0m[38;5;248m[48;5;234m[48;5;234m[38;5;37m[38;5;242m|[0m[38;5;242m[48;5;234m[48;5;234m[38;5;37m base[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m py[0m[38;5;37m[48;5;234m[48;5;234m[38;5;37m [0m[38;5;37m[48;5;234m[49m[39m]697;EndPrompt[72D[?1h=[?2004hnpm start[?1l>[?2004l
+]697;OSCLock=031f233f1b5f432bbef5a78f13fc5cca]697;PreExec]2;npm start]1;npm
+> portfolio-analyzer@0.1.0 start
+> react-scripts start
+
+[1G[0K(node:76291) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:76291) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+[2J[3J[H[36mStarting the development server...[39m
+[36m[39m
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[33mCompiled with warnings.[39m
+[33m[39m
+[eslint] 
+src/components/PortfolioAnalyzer.js
+  [1mLine 40:9:[22m  'GRADIENT_COLORS' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+Search for the [4m[33mkeywords[39m[24m to learn more about each warning.
+To ignore, add [36m// eslint-disable-next-line[39m to the line before.
+
+[1m[33mWARNING[39m[22m in [eslint] 
+src/components/PortfolioAnalyzer.js
+  [1mLine 40:9:[22m  'GRADIENT_COLORS' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[33mCompiled with warnings.[39m
+[33m[39m
+[eslint] 
+src/components/PortfolioAnalyzer.js
+  [1mLine 40:9:[22m  'GRADIENT_COLORS' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+Search for the [4m[33mkeywords[39m[24m to learn more about each warning.
+To ignore, add [36m// eslint-disable-next-line[39m to the line before.
+
+[1m[33mWARNING[39m[22m in [eslint] 
+src/components/PortfolioAnalyzer.js
+  [1mLine 40:9:[22m  'GRADIENT_COLORS' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[33mCompiled with warnings.[39m
+[33m[39m
+[eslint] 
+src/components/PortfolioAnalyzer.js
+  [1mLine 1:27:[22m  'useRef' is defined but never used        [33m[4mno-unused-vars[24m[39m
+  [1mLine 1:35:[22m  'useEffect' is defined but never used     [33m[4mno-unused-vars[24m[39m
+  [1mLine 2:10:[22m  'createPopper' is defined but never used  [33m[4mno-unused-vars[24m[39m
+
+Search for the [4m[33mkeywords[39m[24m to learn more about each warning.
+To ignore, add [36m// eslint-disable-next-line[39m to the line before.
+
+[1m[33mWARNING[39m[22m in [eslint] 
+src/components/PortfolioAnalyzer.js
+  [1mLine 1:27:[22m  'useRef' is defined but never used        [33m[4mno-unused-vars[24m[39m
+  [1mLine 1:35:[22m  'useEffect' is defined but never used     [33m[4mno-unused-vars[24m[39m
+  [1mLine 2:10:[22m  'createPopper' is defined but never used  [33m[4mno-unused-vars[24m[39m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[33mCompiled with warnings.[39m
+[33m[39m
+[eslint] 
+src/components/PortfolioAnalyzer.js
+  [1mLine 1:35:[22m  'useEffect' is defined but never used                [33m[4mno-unused-vars[24m[39m
+  [1mLine 2:10:[22m  'createPopper' is defined but never used             [33m[4mno-unused-vars[24m[39m
+  [1mLine 36:9:[22m  'tooltipRef' is assigned a value but never used      [33m[4mno-unused-vars[24m[39m
+  [1mLine 37:9:[22m  'popperInstance' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+Search for the [4m[33mkeywords[39m[24m to learn more about each warning.
+To ignore, add [36m// eslint-disable-next-line[39m to the line before.
+
+[1m[33mWARNING[39m[22m in [eslint] 
+src/components/PortfolioAnalyzer.js
+  [1mLine 1:35:[22m  'useEffect' is defined but never used                [33m[4mno-unused-vars[24m[39m
+  [1mLine 2:10:[22m  'createPopper' is defined but never used             [33m[4mno-unused-vars[24m[39m
+  [1mLine 36:9:[22m  'tooltipRef' is assigned a value but never used      [33m[4mno-unused-vars[24m[39m
+  [1mLine 37:9:[22m  'popperInstance' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[33mCompiled with warnings.[39m
+[33m[39m
+[eslint] 
+src/components/PortfolioAnalyzer.js
+  [1mLine 2:10:[22m   'createPopper' is defined but never used                                                                                                                                                                                                                                     [33m[4mno-unused-vars[24m[39m
+  [1mLine 36:9:[22m   'tooltipRef' is assigned a value but never used                                                                                                                                                                                                                              [33m[4mno-unused-vars[24m[39m
+  [1mLine 43:24:[22m  The ref value 'popperInstance.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'popperInstance.current' to a variable inside the effect, and use that variable in the cleanup function  [33m[4mreact-hooks/exhaustive-deps[24m[39m
+
+Search for the [4m[33mkeywords[39m[24m to learn more about each warning.
+To ignore, add [36m// eslint-disable-next-line[39m to the line before.
+
+[1m[33mWARNING[39m[22m in [eslint] 
+src/components/PortfolioAnalyzer.js
+  [1mLine 2:10:[22m   'createPopper' is defined but never used                                                                                                                                                                                                                                     [33m[4mno-unused-vars[24m[39m
+  [1mLine 36:9:[22m   'tooltipRef' is assigned a value but never used                                                                                                                                                                                                                              [33m[4mno-unused-vars[24m[39m
+  [1mLine 43:24:[22m  The ref value 'popperInstance.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'popperInstance.current' to a variable inside the effect, and use that variable in the cleanup function  [33m[4mreact-hooks/exhaustive-deps[24m[39m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[33mCompiled with warnings.[39m
+[33m[39m
+[eslint] 
+src/components/PortfolioAnalyzer.js
+  [1mLine 49:9:[22m  'centerTextPlugin' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+Search for the [4m[33mkeywords[39m[24m to learn more about each warning.
+To ignore, add [36m// eslint-disable-next-line[39m to the line before.
+
+[1m[33mWARNING[39m[22m in [eslint] 
+src/components/PortfolioAnalyzer.js
+  [1mLine 49:9:[22m  'centerTextPlugin' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1mportfolio-analyzer[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.37:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+webpack compiled [1m[32msuccessfully[39m[22m
