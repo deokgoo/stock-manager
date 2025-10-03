@@ -1,6 +1,7 @@
 {
   "name": "portfolio-analyzer",
   "version": "0.1.0",
+  "homepage": "https://deokgoo.github.io/stock-manager",
   "private": true,
   "dependencies": {
     "@popperjs/core": "^2.11.8",
