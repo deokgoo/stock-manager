@@ -1,0 +1,54 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.95);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.85);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Main Card -->
+  <rect x="80" y="80" width="1040" height="470" rx="20" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="600" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#2d3748">
+    동구를 위한 주식 포트폴리오 분석
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#718096">
+    전문적인 투자 분석 및 AI 기반 리스크 평가 보고서
+  </text>
+  
+  <!-- Chart Icons -->
+  <circle cx="300" cy="350" r="40" fill="#43e97b" opacity="0.8"/>
+  <text x="300" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="white">📊</text>
+  
+  <circle cx="600" cy="350" r="40" fill="#667eea" opacity="0.8"/>
+  <text x="600" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="white">📈</text>
+  
+  <circle cx="900" cy="350" r="40" fill="#f5576c" opacity="0.8"/>
+  <text x="900" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="white">🛡️</text>
+  
+  <!-- Feature Labels -->
+  <text x="300" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#2d3748">
+    포트폴리오 구성
+  </text>
+  <text x="600" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#2d3748">
+    수익률 분석
+  </text>
+  <text x="900" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#2d3748">
+    위험도 평가
+  </text>
+  
+  <!-- Stats -->
+  <text x="600" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#43e97b">
+    수익률 +9.9% | 총 투자금액 4,106만원
+  </text>
+</svg>

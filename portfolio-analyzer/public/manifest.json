@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "동구 포트폴리오",
+  "name": "동구를 위한 주식 포트폴리오 분석 보고서",
+  "description": "전문적인 투자 분석 및 AI 기반 리스크 평가",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,8 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#667eea",
+  "background_color": "#ffffff",
+  "lang": "ko",
+  "categories": ["finance", "business", "productivity"]
 }
